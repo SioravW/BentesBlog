@@ -26,5 +26,5 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: |
-        cd Frontend/view
+        cd Backend
         mvn -B package --file pom.xml
