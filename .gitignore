@@ -27,7 +27,7 @@ hs_err_pid*
 *.iml
 
 #vue
-view/node_modules/
+Frontend/view/node_modules/
 
 #maven
 backend/.mvn/wrapper/
