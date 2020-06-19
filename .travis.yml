@@ -11,5 +11,5 @@ install:
   - cd Frontend/view
   - npm install
 script:
-  - npm run build
   - npm run test:unit
+  - npm run build
