@@ -8,7 +8,9 @@ branches:
   only:
     - master
 install:
+  - cd Frontend/view
   - npm install
 script:
+  - cd Frontend/view    
   - npm run build
   - npm run test:unit
