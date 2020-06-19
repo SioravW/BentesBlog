@@ -1,13 +1,14 @@
-matrix:
-  include:
-    - language: java
-
-    - language: node_js
-      node_js: 7
-      
-Before script:
-- cd Frontend/view
-- npm install
-
+language: node_js
+node_js:
+  - '8'
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+install:
+  - npm install
 script:
--npm test
+  - npm run build
+  - npm run test:unit
