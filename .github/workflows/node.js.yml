@@ -24,7 +24,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd Frontend/view
-    - run: npm install
-    - run: npm run build --if-present
-    - run: npm test
+    - name: Running npm
+      run: |
+      cd Frontend/view
+      npm install
+      npm run build --if-present
+      npm test
