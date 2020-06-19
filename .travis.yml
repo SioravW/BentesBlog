@@ -4,3 +4,10 @@ matrix:
 
     - language: node_js
       node_js: 7
+      
+Before script:
+- cd Frontend/view
+- npm install
+
+script:
+-npm test
