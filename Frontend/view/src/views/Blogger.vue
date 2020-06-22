@@ -15,12 +15,13 @@ export default {
     data(){
         return{
             blogger: [],
-            journeys: []
+            journeys: [],
+            id: this.$route.params.id,
         }
     },
     created(){
-        axios.get('localhost/blogger/' + this.$route.params.id).then(res => this.blogger = res.data).catch(err => console.log(err));
-        axios.get('/localhost/blogger/' + this.$route.params.id + '/journeys/').then(res => this.journeys = res.data).catch(err => console.log(err));
+        axios.get('localhost/blogger/' + this.id).then(res => this.blogger = res.data).catch(err => console.log(err));
+        axios.get('/localhost/blogger/' + this.id + '/journeys/').then(res => this.journeys = res.data).catch(err => console.log(err));
     }
 }
 </script>
