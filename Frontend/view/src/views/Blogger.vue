@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h2> Journeys of {{ blogger.name }}</h2>
+        <h2 class="h2"> Journeys of {{ blogger.name }}</h2>
         <div v-for="journey in journeys" :key="journey.id">
-            <router-link :to="{ path: '/Journey/'+ journey.id}">{{ journey.title }}</router-link>
+            <h4><router-link :to="{ path: '/Journey/'+ journey.id}">{{ journey.title }}</router-link></h4>
         </div>
     </div>
 </template>

@@ -2,7 +2,7 @@
   <div>
     <h2>Bloggers:</h2>
     <div v-for="blogger in bloggers" :key="blogger.id">
-      <router-link :to="{ path: '/Blogger/'+ blogger.id}">{{ blogger.name }}</router-link>
+      <h4><router-link :to="{ path: '/Blogger/'+ blogger.id}" class="navbar-header">{{ blogger.name }}</router-link></h4>
     </div>
   </div>
 </template>
@@ -27,3 +27,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>
