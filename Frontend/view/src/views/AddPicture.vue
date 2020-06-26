@@ -1,7 +1,7 @@
 <template>
     <div>
-        <input type="file" @change="onFileSelected" >
-        <input type="button" v-on:click="uploadPicture">
+        <input type="file" @change="onFileSelected" class="form-control-file">
+        <input type="button" v-on:click="uploadPicture" value="upload">
     </div>
 </template>
 

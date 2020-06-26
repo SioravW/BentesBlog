@@ -1,32 +1,46 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="container">
+    <div id="header">
+      <center>
+        <h1><router-link to="/" class="h1">Bente in IJsland</router-link></h1>
+      </center>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+a:link {
+  color: rgb(0, 247, 255);
+}
+
+a:visited {
+  color: rgb(0, 247, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 0, 212);
+}
+
+h2 {
+  color: rgb(0, 247, 255);
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+body {
+  background-color: black;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+#header {
+  background-color: gray;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+p {
+  color: rgb(0, 247, 255);
+}
+
+input[type=file] {
+  color: rgb(0, 247, 255);
 }
 </style>

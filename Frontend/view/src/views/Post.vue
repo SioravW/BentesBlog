@@ -2,8 +2,10 @@
     <div>
         <h2>{{ post.title }}</h2><br>
         <p>{{ post.text }}</p>
-        <div v-for="picture in pictures" :key="picture.id">
-            <img :src="picture" :alt="picture.fileName">
+        <div class="row">
+            <div v-for="picture in pictures" :key="picture.id" class="col-lg-4 col-md-12 mb-4">
+                <img :src="picture" :alt="picture.fileName" class="img-fluid mb-4">
+            </div>
         </div>
     </div>
 </template>
