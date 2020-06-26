@@ -2,7 +2,7 @@
     <div>
         <h2 class="h2"> Journeys of {{ blogger.name }}</h2>
         <div v-for="journey in journeys" :key="journey.id">
-            <h4><router-link :to="{ path: '/Journey/'+ journey.id}">{{ journey.title }}</router-link></h4>
+            <h4><router-link :to="{ path: '/Journey/'+ journey.id}" class="journeyName">{{ journey.title }}</router-link></h4>
         </div>
     </div>
 </template>

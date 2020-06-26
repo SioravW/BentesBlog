@@ -2,7 +2,7 @@
     <div>
         <h2> Posts in journey: {{ journey.title }}</h2>
         <div v-for="post in posts" :key="post.id">
-            <h4><router-link :to="{ path: '/post/'+ post.id}">{{ post.title }}</router-link></h4>
+            <h4><router-link :to="{ path: '/post/'+ post.id}" class="postName">{{ post.title }}</router-link></h4>
             <p> {{ post.text }} </p>
         </div>
     </div>

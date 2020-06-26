@@ -40,6 +40,7 @@ p {
   color: rgb(0, 247, 255);
 }
 
-img {
+input[type=file] {
+  color: rgb(0, 247, 255);
 }
 </style>
